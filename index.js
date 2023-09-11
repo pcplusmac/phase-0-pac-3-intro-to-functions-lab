@@ -19,3 +19,26 @@ function logWhisper(string){
     console.log(spy);
 
 }
+
+function sayHiToHeadphonedRoommate(string){
+    
+    const upstr = string.toUpperCase();
+    const lwstr = string.toLowerCase();
+    let msg;
+
+    if (string === lwstr) {
+        msg = "I can't hear you!";
+    }
+    else if (string === upstr) {
+        msg = "YES INDEED!";
+    }
+    else if (string === "Let's have dinner together!") {
+        msg = "I would love to!";
+    }
+    else {
+        return;
+    }
+
+    return msg;
+ 
+}
